@@ -1,0 +1,229 @@
+@font-face{
+    font-family:"Forwa";
+    src: url("assets/FFFFORWA.TTF") format('opentype');
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    margin:0;
+}
+/* INTRO PAGE */
+#intro {
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('assets/PICTURES/5.jpg');
+    background-size:cover;
+    padding-bottom: 190px;
+    width:100%;
+    transition-duration: 0.4s;
+}
+#main{
+    transition: margin-left .5s;
+}
+nav{
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar at the top of the page */
+    width: 100%; /* Full width */
+    padding:15px;
+}
+#topMenu{
+    font-family:"Forwa";
+    display:inline-block;
+}
+.brand{
+    text-align: center;
+    padding-left:38%;
+    margin-left:auto;
+    margin-right:auto;
+    font-size: 30px;
+    color: red;
+    text-decoration: none;
+}
+#introContent{
+    padding-left: 10%;
+}
+.introSen{
+    font-family:"Forwa";
+    padding-top: 15%;
+    font-size:60px;
+    font-weight: bold;
+    color:white;
+    line-height: 110px;
+}
+.introPar{
+    font-family:"Tahoma", sans-serif;
+    color:white;
+    font-size: 30px;
+    font-weight:100;
+}
+#iconMenu{
+    display:inline-block;
+}
+/* ABOUT PAGE */
+#about{
+    margin:0;
+    background: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6) ), url('assets/PICTURES/Peppei_01.jpg');
+    background-size: cover;
+    padding-top:100px;
+    padding-bottom:100px;
+    transition-duration:0.4s;
+}
+#aboutContent{
+    padding-left: 10%;
+}
+.aboutSen{
+    font-family:"Forwa";
+    padding-top: 10%;
+    font-size:50px;
+    font-weight: bold;
+    color:white;
+}
+.aboutPar{
+    font-family:"Tahoma",sans-serif;
+    color:white;
+    font-size: 25px;
+    font-weight: lighter;
+}
+input[type=text]{
+    border: 0;
+    box-shadow:0 0 15px 4px rgba(240, 234, 234, 0.262);
+    border-radius: 10px;
+    width:15%;
+    height:30px;
+    padding-right: 10%;
+}
+button{
+    margin-left: 10px;
+    border:none;
+    background-color: red;
+    color:white;
+    padding:10px 20px;
+    font-size:20px;
+    border-radius: 10px;
+    transition-duration: 0.4s;
+    cursor:pointer;
+}
+button:hover{
+    background-color:white;
+    color:red;
+}
+
+/* PREORDER */
+#preorder{
+    margin:0;
+    background-color:#111;
+    color:white;
+    padding-top: 10%;
+    padding-bottom: 180px;
+}
+.count{
+    font-size: 50px;
+    padding-top:5%;
+    padding-left:15%;
+    font-family:"Forwa";
+    margin-bottom: 0;
+    height:0;
+}
+#countDown{
+    font-family:"Forwa";
+    padding-left: 15%;
+    margin-top: 10px;
+    font-size:50px;
+}
+.msg2{
+    font-family:Arial, sans-serif;
+    padding-left:15%;
+    line-height:10px;
+    color:red;
+    font-weight: bold;
+    font-size: 60px;
+}
+.msg1{
+    font-family: Arial,sans-serif;
+    padding-left:15%;
+    padding-top: 50px;
+    font-weight:lighter;
+    font-size: 40px;
+}
+
+.preorderSubmit{
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    border-radius: 4px;
+    background-color: #f4511e;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 28px;
+    padding: 15px;
+    width: 250px;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin-left:15%;
+    margin-top:30px;
+}
+.preorderSubmit span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+}
+
+.preorderSubmit span:after {
+    content: '\00bb';
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+}
+
+.preorderSubmit:hover span {
+    padding-right: 25px;
+}
+
+.preorderSubmit:hover span:after {
+    opacity: 1;
+    right: 0;
+}
+
+/* NAV */
+.sidenav {
+    font-family:"Forwa";
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10%;
+}
+.sidenav a {
+    padding: 35px 8px 8px 35px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:firebrick;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

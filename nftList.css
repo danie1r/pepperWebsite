@@ -1,0 +1,63 @@
+@font-face{
+    font-family:"Forwa";
+    src: url("assets/FFFFORWA.TTF") format('opentype');
+}
+body {
+    background-color: #111;
+    margin: 0;
+    background-size:cover;
+}
+#main{
+    transition: margin-left .5s;
+}
+#topMenu{
+    font-family:"Forwa";
+    display:inline-block;
+}
+#iconMenu{
+    display:inline-block;
+}
+h2{
+    padding-left: 40%;
+    color:rgb(255, 0, 0);
+    font-size: 30px;
+}
+.sidenav {
+    font-family:"Forwa";
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 10%;
+}
+
+.sidenav a {
+    padding: 35px 8px 8px 35px;
+    text-decoration: none;
+    font-size: 30px;
+    color: white;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidenav a:hover {
+    color:firebrick;
+}
+
+.sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+@media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+}

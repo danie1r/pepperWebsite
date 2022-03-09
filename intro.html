@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>
+            Pepper.Inc
+        </title>
+        <link rel="stylesheet" type="text/css" href="intro.css">
+    </head>
+
+    <body>
+        
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+            <a href="#intro">HOME</a>
+            <a href="#about">ABOUT</a>
+            <a href="#preorder">PRE-ORDER</a>
+            <a href="nftList.html">NFT COLLECTIONS</a>
+            <a href="#">PEPPER CLUB</a>
+            <a href="#">ROADMAP</a>
+            <a href="#">TEAM</a>
+        </div>
+
+        <div id="main">
+            <div id = "intro">
+                <nav>
+                    <span id = "topMenu" style="font-size:40px;cursor:pointer;color:white;padding-left: 5%;" onclick="openNav()">&#9776;</span>
+                    <a href="#intro" class="brand" id = "topMenu">pepper</a>
+                </nav>   
+                <p id = "introContent" class="introSen">Are you ready to rev up <br> your Pepper Motor?</p>
+                <p id = "introContent" class="introPar">Brace yourselves, Pepper Motor just got real!
+                    <br style = "line-height: 100px">
+                    Grab your exclusive NFTs and don't miss our airdrop 
+                    <br>
+                    dates on our Discord.
+                </p>
+                <span id = "iconMenu" style="padding-left:10%;"><img src="assets/ICONS_SVG/Discord.svg"/></span>
+                <span id = "iconMenu"><img style="height:45px;" src="assets/ICONS_SVG/Opensea.png"/></span>
+                <a href="#about"></a>
+            </div>
+
+            <div id = "about">
+                <p id = "aboutContent" class="aboutSen">WELCOME TO THE PEPPER UNIVERSE</p>
+                <p id = "aboutContent" class="aboutPar">Pepper Motor is a collection of 10,000 Peppi and Peppi-Car NFTS<br>
+                    developed and exclusively designed by Studio Pepper, a team of <br>
+                    automotive designers.
+                    <br>
+                    <br>
+                    Build up a collection and race them across our Pepper Universe<br>
+                    in PNE Ethreum-based Pepper Motor Game and receive a <br>
+                    special 3D printed physical model.<br><br>
+                    <strong>COMING SOON</strong><br><br>
+                    Subscribe to our Email List:
+                </p>
+                
+                <form style="padding-left: 10%;"action="post">
+                    <input type="text" id="fname" name="fname">
+                    <button type="submit"><span>Subscribe</span></button>
+                </form>
+            </div>
+
+            <div id = "preorder">
+                <p class="count">RELEASE IN: </p>
+                <p id="countDown" class = "count"></p>
+    
+                <p class="msg1">PEPPER MOTOR NFT</p>
+                <strong class = "msg2">NOW PRE-ORDERING</strong>
+                <br>
+                <button id="button" class="preorderSubmit" style="vertical-align:middle"><span>PRE-ORDER </span></button>
+            </div>
+
+            <div id = "team">
+                <p class = "teamTitle">The Team</p>
+                <p class = "teamContent"></p>
+            </div>
+        </div>
+
+
+        <script>
+            var countDownDate = new Date("Jul 15, 2022 00:00:00").getTime();
+            var x = setInterval(function() {
+                var now = new Date().getTime();
+                var distance = countDownDate - now;
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+                document.getElementById("countDown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+                if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countDown").innerHTML = "EXPIRED";
+                }
+            }, 1000);
+
+            function openNav() {
+            document.getElementById("mySidenav").style.width = "500px";
+            document.getElementById("main").style.marginLeft = "500px";
+            // document.body.style.color = "rgba(0,0,0,0.4)";
+            }
+            
+            function closeNav() {
+            document.getElementById("mySidenav").style.width = "0";
+            document.getElementById("main").style.marginLeft= "0";
+            }
+           
+        </script>
+    </body>
+</html>
