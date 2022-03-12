@@ -2,10 +2,13 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
+        <script src="jquery-2.1.4.js"></script>
         <title>
             Pepper.Inc
         </title>
         <link rel="stylesheet" type="text/css" href="intro.css">
+        <link rel="stylesheet" type="text/css" href="modal.css">
+        <link rel="stylesheet" type="text/css" href="loader.css">
     </head>
 
     <body>
@@ -15,10 +18,10 @@
             <a href="#intro">HOME</a>
             <a href="#about">ABOUT</a>
             <a href="#preorder">PRE-ORDER</a>
-            <a href="nftList.html">NFT COLLECTIONS</a>
+            <a href="#sneakpeek">NFT COLLECTIONS</a>
             <a href="#">PEPPER CLUB</a>
             <a href="#">ROADMAP</a>
-            <a href="#">TEAM</a>
+            <a href="#team">TEAM</a>
         </div>
 
         <div id="main">
@@ -62,21 +65,149 @@
             <div id = "preorder">
                 <p class="count">RELEASE IN: </p>
                 <p id="countDown" class = "count"></p>
-    
                 <p class="msg1">PEPPER MOTOR NFT</p>
                 <strong class = "msg2">NOW PRE-ORDERING</strong>
                 <br>
                 <button id="button" class="preorderSubmit" style="vertical-align:middle"><span>PRE-ORDER </span></button>
             </div>
 
+            <div id = "sneakpeek">
+                <div>
+                    <p class = "spTitle">NFT Collections</p>
+                    <p class = "spSen">sneak-peek at our exclusive collections...</p>
+                </div>
+
+                <div class="collectionBody">
+                   
+                    <div class = "collections">
+                        <div class = "collection">
+                            <button id="myBtn" class = "1">
+                                <div>
+                                    <img style="border-bottom:4px outset;" class = "collectionimg" src="assets/PEPPI/Peppi02_Tom.jpg">
+                                    <p class="colLabel"><strong>Peppi</strong></p>
+                                    <p>I mean, look at this adorable Peppi!<br>Rumors have that it's the finest racer in <br>
+                                    the metaverse, but who knows?</p>
+                                    
+                                </div>
+                            </button>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Peppi</h2>    
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>The finest peppercorns in the metaverse...</p>
+                                    </div>
+                                    <img class = "modalimg" src="assets/PEPPI/Peppi01_Bread.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "collection">
+                            <button id="myBtn" class = "2">
+                                <div>
+                                    <img style="border-bottom:4px outset;" class = "collectionimg" src="assets/PICTURES/peppicar.png">
+                                    <p class="colLabel"><strong>Peppi-Car</strong></p>
+                                    <p>All-electric super motor Peppi-Car!<br>Designed by professional automotive designers,<br> 
+                                        our Peppi-Car aims for a zero-emission race culture.<br>Are you ready to collect and 
+                                    drive one?</p>
+                                </div>
+                            </button>
+                            
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Peppi</h2>    
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>The finest peppercorns in the metaverse...</p>
+                                    </div>
+                                    <img class = "modalimg" src="assets/PEPPI/Peppi01_Bread.jpg">
+                                </div>
+                            </div>
+                        </div>
+                        <div class = "collection">
+                            <div>
+                                <img style="border-bottom:4px outset;" class = "collectionimg" src="assets/PICTURES/KakaoTalk_Photo_2022-03-01-21-15-07 004.png">
+                                <p class="colLabel"><strong>Pepper Race-Track</strong></p>
+                                <p>You can own race tracks in our Peppi-Universe. <br>
+                                Bring your peppi and race your pepp-riends!</p>
+                            </div>
+
+                            <button id="myBtn">view</button>
+                            <!-- The Modal -->
+                            <div id="myModal" class="modal">
+                            <!-- Modal content -->
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                        <span class="close">&times;</span>
+                                        <h2>Peppi</h2>    
+                                    </div>
+                                    <div class="modal-body">
+                                        <p>The finest peppercorns in the metaverse...</p>
+                                    </div>
+                                    <img class = "modalimg" src="assets/PEPPI/Peppi01_Bread.jpg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id = "team">
                 <p class = "teamTitle">The Team</p>
-                <p class = "teamContent"></p>
+                <p class = "teamContent">Studio Pepper is founded by five minds seeking to add playful flavors
+                and spicy kicks to the world. We are as comfortable existing in a virtual world as they are in the physical.
+                </p>
+                <div class = members>
+                    <div class = member>
+                        <div>
+                            <img class="memberimg" src="assets/PEPPI/Peppi01_Gigi.png">
+                            <p style = "font-family: Arial, sans-serif;font-size: 15px;font-weight:lighter;"><strong>Hot Boss: </strong>If it's not pretty, I don't want them.</p>
+                        </div>
+                    </div>
+                    <div class = member>
+                        <div>
+                            <img class="memberimg" src="assets/PEPPI/Peppi02_Tom.jpg">
+                            <p><strong>Developer: </strong>Snowboard fanatic</p>
+                        </div>
+                    </div>
+                    <div class = member>
+                        <div>
+                            <img class="memberimg" src="assets/PEPPI/Peppi01_Bread.jpg">
+                            <p><strong>Strategist: </strong>Paints and builds classic bikes.</p>
+                        </div>
+                    </div>
+                    <div class = member>
+                        <div>
+                            <img class="memberimg" src="assets/PEPPI/Peppi04_Rachel.jpg">
+                            <p><strong>Expert: </strong>Persistent learner of things.</p>
+                        </div>
+                    </div>
+                    <div class = member>
+                        <div>
+                            <img class="memberimg" src="assets/PEPPI/Peppi05_Leonardo.jpg">
+                            <p><strong>Designer: </strong>The name's self-explanatory.</p>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
 
-
+        <div class="loader-wrapper">
+            <span class="loader"><span class="loader-inner"></span></span>
+        </div>
+        
         <script>
+            // $(window).on("load",function(){
+            //     $(".loader-wrapper").fadeOut("slow");
+            // });
+
             var countDownDate = new Date("Jul 15, 2022 00:00:00").getTime();
             var x = setInterval(function() {
                 var now = new Date().getTime();
@@ -103,7 +234,27 @@
             document.getElementById("mySidenav").style.width = "0";
             document.getElementById("main").style.marginLeft= "0";
             }
-           
+
+            
+            var modal = document.getElementById("myModal");
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+                modal.style.display = "block";
+            }
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+                modal.style.display = "none";
+            }
+            // When the user clicks anywhere outside of the modal, close it
+            window.onclick = function(event) {
+                if (event.target == modal) {
+                    modal.style.display = "none";
+                }
+            }
         </script>
     </body>
 </html>

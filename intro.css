@@ -2,6 +2,7 @@
     font-family:"Forwa";
     src: url("assets/FFFFORWA.TTF") format('opentype');
 }
+
 html{
     scroll-behavior: smooth;
 }
@@ -10,9 +11,11 @@ body{
 }
 /* INTRO PAGE */
 #intro {
+    margin-top:0;
     background: linear-gradient(to right, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75) ), url('assets/PICTURES/5.jpg');
     background-size:cover;
     padding-bottom: 190px;
+    padding-top:50px;
     width:100%;
     transition-duration: 0.4s;
 }
@@ -21,7 +24,7 @@ body{
 }
 nav{
     overflow: hidden;
-    background-color: #333;
+    background-color:rgba(0,0,0,.5);
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
@@ -31,13 +34,16 @@ nav{
     font-family:"Forwa";
     display:inline-block;
 }
+#topMenu:hover{
+    color: #ff0101;
+}
 .brand{
     text-align: center;
     padding-left:38%;
     margin-left:auto;
     margin-right:auto;
     font-size: 30px;
-    color: red;
+    color: #ff0101;
     text-decoration: none;
 }
 #introContent{
@@ -94,9 +100,9 @@ input[type=text]{
     padding-right: 10%;
 }
 button{
-    margin-left: 10px;
+    /* margin-left: 10px; */
     border:none;
-    background-color: red;
+    background-color: #ff0101;
     color:white;
     padding:10px 20px;
     font-size:20px;
@@ -106,7 +112,7 @@ button{
 }
 button:hover{
     background-color:white;
-    color:red;
+    color:#ff0101;
 }
 
 /* PREORDER */
@@ -132,15 +138,15 @@ button:hover{
     font-size:50px;
 }
 .msg2{
-    font-family:Arial, sans-serif;
+    font-family:"Tahoma",sans-serif;
     padding-left:15%;
     line-height:10px;
-    color:red;
+    color:#ff0101;
     font-weight: bold;
     font-size: 60px;
 }
 .msg1{
-    font-family: Arial,sans-serif;
+    font-family: "Tahoma",sans-serif;
     padding-left:15%;
     padding-top: 50px;
     font-weight:lighter;
@@ -148,10 +154,10 @@ button:hover{
 }
 
 .preorderSubmit{
-    font-family: Arial, sans-serif;
+    font-family: "Tahoma",sans-serif;
     font-weight: bold;
     border-radius: 4px;
-    background-color: #f4511e;
+    background-color: #ff0101;
     border: none;
     color: #FFFFFF;
     text-align: center;
@@ -187,7 +193,95 @@ button:hover{
     opacity: 1;
     right: 0;
 }
+#sneakpeek{
+    margin:0 auto;
+    background-color:#111;
+    color:white;
+    padding-top: 10%;
+    padding-bottom:180px;
+}
+.spTitle{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Forwa";
+}
+.spSen{
+    margin:0 auto;
+    text-align: center;
+    font-family:"Tahoma",sans-serif;
+    font-size: 20px;
+    width: 600px;
+    font-weight:lighter;
+    padding-bottom: 50px;
+}
 
+.collections{
+    margin: 0 auto;
+    text-align: center;
+    display:flex;
+    gap:40px;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.collection{
+    font-family: "Tahoma", sans-serif;
+    margin:0 auto;
+    text-align: center;
+    flex:1;
+    border-style:solid;
+    border-width: thick;
+    border-radius: 10px;
+    border-color:#FFFFFF;
+}
+.collection:hover{
+    border-color:#ff0101;
+}
+
+.colLabel{
+    font-family: "Forwa";
+}
+.collectionimg{
+    margin-top: 10%;
+    max-width: 100%;
+    max-height:200px;
+    border-radius: 10px;
+}
+/* TEAM */
+#team{
+    margin:0;
+    background-color:#111;
+    color:white;
+    padding-top: 10%;
+    padding-bottom: 180px;
+}
+.teamTitle{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 60px;
+    font-family: "Forwa";
+}
+.teamContent{
+    margin:0 auto;
+    text-align: center;
+    font-family:"Tahoma",sans-serif;
+    font-size: 20px;
+    width: 600px;
+    font-weight:lighter;
+}
+.members{
+    margin:0 auto;
+    padding-top:100px;
+    text-align: center;
+}
+.member{
+    display: inline-block;
+    text-align: center;
+    font-family:"Tahoma",sans-serif;
+}
+.memberimg{
+    height:300px;
+}
 /* NAV */
 .sidenav {
     font-family:"Forwa";
@@ -212,7 +306,7 @@ button:hover{
 }
 
 .sidenav a:hover {
-    color:firebrick;
+    color:#ff0101;
 }
 
 .sidenav .closebtn {
